@@ -19,7 +19,12 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ipfs": "^0.50.2",
+    "ipfs-http-client": "^47.0.1",
+    "ipfs-provider": "^1.1.0",
+    "with-context": "^0.0.3"
+  },
   "peerDependencies": {
     "react": "16.x"
   },

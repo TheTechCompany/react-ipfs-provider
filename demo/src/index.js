@@ -1,14 +1,20 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
+import Test from './test';
 
-import Example from '../../src'
+import { Provider } from '../../src'
 
 export default class Demo extends Component {
   render() {
-    return <div>
-      <h1>react-ipfs-provider Demo</h1>
-      <Example/>
-    </div>
+    return (
+      <Provider>
+       
+      <div>
+        <h1>react-ipfs-provider Demo</h1>
+        <Test />
+      </div>
+    </Provider>
+    )
   }
 }
 

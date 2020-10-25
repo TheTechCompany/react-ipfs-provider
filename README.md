@@ -1,16 +1,12 @@
 # react-ipfs-provider
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
 Describe react-ipfs-provider here.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm]: https://www.npmjs.org/package/react-ipfs-provider
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[coveralls-badge]: https://img.shields.io/coveralls/TheTechCompany/react-ipfs-provider/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/TheTechCompany/react-ipfs-provider
