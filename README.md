@@ -1,12 +1,68 @@
 # react-ipfs-provider
 
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-ipfs-provider here.
+IPFS Context Provider for React, all the fun of IPFS with as little prop
+drilling and double locking repo's as possible
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+## Install
+
+With NPM 
+
+```
+npm i --save react-ipfs-provider
+
+```
+
+With Yarn
+
+```
+yarn add react-ipfs-provider
+```
+
+## Usage
+
+App.js
+
+```javascript
+import React from 'react';
+import Component from './component';
+import { Provider } from 'react-ipfs-provider';
+
+export default function App(props){
+  return (
+    <Provider ipfs={/* optional ipfs node prop */}>
+      <div>
+        <Component />
+      </div>
+    </Provider>
+  );
+}
+
+```
+
+Component.js
+
+```javascript
+import React from 'react';
+
+import { withIPFS } from 'react-ipfs-provider';
+
+function Component(props){
+  
+  React.useEffect(() => {
+    props.ipfs.add('Content to IPFS')
+  }, [])
+  
+  return (
+    <div>
+      {this.props.ipfs.provider.id} 
+    </div>
+  );
+}
+
+export default withIPFS(Component)
+```
+
+[npm-badge]: https://img.shields.io/npm/v/react-ipfs-provider.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-ipfs-provider
-
-[coveralls-badge]: https://img.shields.io/coveralls/TheTechCompany/react-ipfs-provider/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/TheTechCompany/react-ipfs-provider
