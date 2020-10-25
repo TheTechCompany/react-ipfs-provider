@@ -36,7 +36,7 @@
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/TheTechCompany/react-ipfs-provider",
   "keywords": [
     "react-component"
   ]

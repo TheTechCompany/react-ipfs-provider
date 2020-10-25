@@ -11,7 +11,6 @@ With NPM
 
 ```
 npm i --save react-ipfs-provider
-
 ```
 
 With Yarn
@@ -56,7 +55,7 @@ function Component(props){
   
   return (
     <div>
-      {this.props.ipfs.provider.id} 
+      {props.ipfs.provider.id} 
     </div>
   );
 }
